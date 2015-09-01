@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B341EA44-B25F-4A6D-92C1-1BC452CF9AE8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</key>
+		<string>https://github.com/MainShayne233/introToC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>introToCWorking/introToCWorking.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MainShayne233/introToC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>introToC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
