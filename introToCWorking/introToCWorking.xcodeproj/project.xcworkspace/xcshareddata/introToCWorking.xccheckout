@@ -12,6 +12,8 @@
 	<dict>
 		<key>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</key>
 		<string>https://github.com/MainShayne233/introToC.git</string>
+		<key>F5B9AE834CA436906B765D3CF06B2B54287D4D97</key>
+		<string>https://github.com/MainShayne233/Swiftris.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>introToCWorking/introToCWorking.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</key>
 		<string>../../..</string>
+		<key>F5B9AE834CA436906B765D3CF06B2B54287D4D97</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MainShayne233/introToC.git</string>
@@ -28,6 +32,14 @@
 	<string>D63DF2031B2AC9961596588CA7A3B0D9F1712D80</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F5B9AE834CA436906B765D3CF06B2B54287D4D97</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
