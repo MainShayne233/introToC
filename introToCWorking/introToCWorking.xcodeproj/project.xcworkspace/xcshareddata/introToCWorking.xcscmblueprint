@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D63DF2031B2AC9961596588CA7A3B0D9F1712D80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F5B9AE834CA436906B765D3CF06B2B54287D4D97" : 0,
+    "D63DF2031B2AC9961596588CA7A3B0D9F1712D80" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B341EA44-B25F-4A6D-92C1-1BC452CF9AE8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F5B9AE834CA436906B765D3CF06B2B54287D4D97" : "",
+    "D63DF2031B2AC9961596588CA7A3B0D9F1712D80" : "introToC"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "introToCWorking",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "introToCWorking\/introToCWorking.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MainShayne233\/introToC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D63DF2031B2AC9961596588CA7A3B0D9F1712D80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MainShayne233\/Swiftris.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5B9AE834CA436906B765D3CF06B2B54287D4D97"
+    }
+  ]
+}
