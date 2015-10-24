@@ -1,70 +1,82 @@
-/*
-Shayne Tremblay
- 
-Program 4: This program will calculate average flight distances that the 
-            user's dragon flew per day
- 
-9-24-15
-*/
-
-//pre-processor directives
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
-//main function
 int main(){
     
-    //declares needed int variables
-    int t_days, day, flight;
+    int riders_amt, rider, item, item_bool, lose_item, i, flag = 1;
     
-    //declares needed double variables
-    double avg_distance, distance, t_flights, t_distance;
+    int inventory[6][6] = {0};
     
-    //prompts user to input how many days their dragon has been practicing
-    printf("\nHow many days has your dragon been practicing?\n\n");
+    char item_names[6][20] = {"BLANKET", "SADDLE", "JACKET", "HARNESS", "GOOGLES", "HELMET"};
     
-    //scans the user's input and store it in the t_days int variable
-    scanf("%d", &t_days);
+    printf("How many dragonriders are raiding the equipment shed?\n");
     
-    //starts a for loop that will loop from 1 to the value for t_days, representing each day of practice
-    for (day = 1; day<=t_days; day++){
+    scanf("%d",&riders_amt);
+    
+    while (flag == 1){
         
-        //prompts the user for the amount of flights that were completed on the particular day the loop is on
-        printf("\nHow many flights were completed in day #%d?\n\n",day);
-        
-        //scans the user's input and store it in the t_flights double variable
-        scanf("%lf",&t_flights);
-        
-        /*
-        sets the t_distance to 0, as it will be the variables that
-        counts up the total distance for each specific day
-        */
-        t_distance = 0;
-        
-        //starts a foor loop that loops from 1 to the value of t_flights, representing each flight for the day
-        for (flight = 1; flight<=t_flights; flight++){
+        for (rider = 1; rider <= riders_amt; rider++){
+            printf("Rider %d, it is your turn. Enter 0 to look for an item\n\n");
+            scanf("%d");
             
-            //prompts user for the length of the specific flight the loop is on
-            printf("\nHow long was flight #%d?\n\n", flight);
+            srand(time(0));
             
-            //scans the user's input and stores it in the distance double variable
-            scanf("%lf", &distance);
+            item = rand() % 7;
             
-            //adds the distance value to the t_distance value
-            t_distance += distance;
-            
+            if (item != 6){
+                printf("Rider %d, you have found %s.\n",rider,item_names[item]);
+                if (item != 1 && item != 3){
+                    if (inventory[rider-1][item] == 0){
+                        inventory[rider-1][item] = 1;
+                        printf("You now have %s\n",item_names[item]);
+                    }
+                    else{
+                        printf("You already have that item.\n");
+                    }
+                }
+                else{
+                    if (inventory[rider-1][item] == 0){
+                        if (inventory[rider-1][item-1] == 0){
+                            printf("Sorry, you can't obtain %s\n",item_names[item]);
+                        }
+                        else{
+                            inventory[rider-1][item] = 1;
+                            printf("You now have %s\n",item_names[item]);
+                        }
+                    }
+                    else{
+                        printf("You already have that item.\n");
+                    }
+                }
+            }
+            else{
+                printf("You've been caught!\n");
+                item_bool = 0;
+                for (i = 0; i < 6; i++){
+                    if (inventory[rider][i] == 1)
+                        item_bool = 1;
+                }
+                if (item_bool == 1){
+                    printf("Which piece would you like to lose?\n");
+                    for (i = 0; i < 6; i++){
+                        if (inventory[rider][i] == 1)
+                            printf("%d. %s",i,item_names[i]);
+                    }
+                    scanf("%d",lose_item);
+                    
+                    inventory[rider][lose_item] = 0;
+                    
+                    printf("You have selected the %s to discard.\n", item_names[lose_item]);
+                }
+                else{
+                    printf("There is no equipment for you to lose. Lucky you, sort of.\n");
+                }
+                
+            }
         }
         
-        /*
-        once the for loop has ended, the program should have the total distance, so it now
-        computers the average distance by dividing the total distance by the amount of flights
-        for that day
-        */
-        avg_distance = t_distance/t_flights;
         
-        //ouputs to the user the average flight distance for that day rounded to 3 decimal points
-        printf("\nDay #%d: The average distance is %.3f.\n", day, avg_distance);
     }
     
-    //exit main function
-    return 0;
 }
